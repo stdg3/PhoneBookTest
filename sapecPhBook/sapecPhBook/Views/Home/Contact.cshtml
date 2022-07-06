@@ -1,0 +1,34 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Contact</title>
+</head>
+<body>
+    <div> 
+        <ul>
+            <li>
+                @Html.ActionLink("Home", "Index", "Home")
+            </li>
+            <li>
+                @Html.ActionLink("Contact", "Contact", "Home")
+            </li>
+            <li>
+                @Html.ActionLink("User", "User", "Home")
+            </li>
+            <li>
+                @Html.ActionLink("indexContact", "Index", "Contact")
+            </li>
+            <li>
+                @Html.ActionLink("kayitli olanlar", "Kayitlar", "Contact")
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>UserReg</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm("ContactReg", "Home", FormMethod.Post))
+        {
+            <div>
+                <label>Contact Name</label>
+                @Html.TextBox("Name", null)
+            </div>
+            <div>
+                <label>Contact Number</label>
+                @Html.TextBox("Number", null)
+            </div>
+            <div>
+                <label>Contact Company</label>
+                @Html.TextBox("Company", null)
+            </div>
+            <button type="submit">submit</button>
+        }
+    </div>
+    
+</body>
+</html>

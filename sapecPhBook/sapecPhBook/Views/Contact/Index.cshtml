@@ -1,0 +1,41 @@
+﻿@model string[]
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>
+                @Html.ActionLink("Home", "Index", "Home")
+            </li>
+            <li>
+                @Html.ActionLink("Contact", "Contact", "Home")
+            </li>
+            <li>
+                @Html.ActionLink("User", "User", "Home")
+            </li>
+            <li>
+                @Html.ActionLink("indexContact", "Index", "Contact")
+            </li>
+            <li>
+                @Html.ActionLink("kayitli olanlar", "Kayitlar", "Contact")
+            </li>
+        </ul>
+        <ol>
+            @foreach (var item in Model)
+            {
+                <li>@item</li>
+            }
+
+        </ol>
+    </div>
+</body>
+</html>

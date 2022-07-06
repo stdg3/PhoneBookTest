@@ -1,0 +1,29 @@
+﻿@using sapecPhBook.Models;
+@model List<Contact>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>RegedUser</title>
+</head>
+<body>
+    <div>
+        <ul>
+            @foreach (var item in Model)
+            {
+                <li>@item.Name, @item.Number, @item.Company, @item.ContactID</li>
+
+                @*<a href="/Contact/xDetails/8" )">Detay getir</a>*@
+                @*<a href="/Contact/xDetails/?id=2" )">Detay getir</a>*@
+                <a href="@Url.Action("xDetails", "Contact",
+                        new { asd=item.ContactID})">Detay getir</a>
+            }
+        </ul>
+    </div>
+</body>
+</html>

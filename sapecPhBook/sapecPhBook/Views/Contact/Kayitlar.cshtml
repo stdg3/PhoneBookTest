@@ -1,0 +1,50 @@
+﻿@using sapecPhBook.Models;
+@model List<Contact>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Kayitlar</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>
+                @Html.ActionLink("Home", "Index", "Home")
+            </li>
+            <li>
+                @Html.ActionLink("Contact", "Contact", "Home")
+            </li>
+            <li>
+                @Html.ActionLink("User", "User", "Home")
+            </li>
+            <li>
+                @Html.ActionLink("indexContact", "Index", "Contact")
+            </li>
+            <li>
+                @Html.ActionLink("kayitli olanlar", "Kayitlar", "Contact")
+            </li>
+        </ul> 
+        <hr />
+        <p>@ViewBag.UrunSayisi adet kayit geldi</p>
+        <hr />
+        <ol>
+            @foreach (var item in Model)
+            {
+                <li>@item.Name, @item.Number, @item.Company, @item.ContactID</li>
+
+                @*<a href="/Contact/xDetails/8" )">Detay getir</a>*@
+                @*<a href="/Contact/xDetails/?id=2" )">Detay getir</a>*@
+                <a href="@Url.Action("xDetails", "Contact",
+                        new { asd=item.ContactID})">Detay getir</a>
+            }
+        </ol>
+        
+    </div>
+</body>
+</html>

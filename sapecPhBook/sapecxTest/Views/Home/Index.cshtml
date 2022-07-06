@@ -1,0 +1,10 @@
+﻿@model IEnumerable<sapecxTest.Models.Regs>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+@foreach (var item in Model)
+{
+    <p>@item.RegDate</p>
+}
