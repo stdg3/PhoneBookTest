@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sapecxTest", "sapecxTest\sa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sapecTestVAv2", "sapecTestVAv2\sapecTestVAv2.csproj", "{AB3ADD02-4A9F-4B11-B17E-66049E92BEE0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserIdentity", "UserIdentity\UserIdentity.csproj", "{872A6C6E-3353-40B2-8A0F-CCD75970ECFB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{AB3ADD02-4A9F-4B11-B17E-66049E92BEE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB3ADD02-4A9F-4B11-B17E-66049E92BEE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB3ADD02-4A9F-4B11-B17E-66049E92BEE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{872A6C6E-3353-40B2-8A0F-CCD75970ECFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{872A6C6E-3353-40B2-8A0F-CCD75970ECFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{872A6C6E-3353-40B2-8A0F-CCD75970ECFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{872A6C6E-3353-40B2-8A0F-CCD75970ECFB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
